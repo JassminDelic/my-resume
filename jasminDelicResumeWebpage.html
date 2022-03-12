@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae - Jasmin Delić</title>
+
+    <style>
+        body {
+            background-color: #315eff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .nav {
+            background-color: #6b31ff;
+            margin: -20px;
+            margin-bottom: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 18px;
+            float: left;
+        }
+
+        .nav a:hover {
+            background-color: #31c5ff;
+            border-radius: 20px;
+        }
+
+        .container {
+            box-sizing: border-box;
+            padding: 0px 10px;
+            border-top: 1px solid #dee1e4;
+            margin: 20px;
+            margin-bottom: 0;
+        }
+
+        img {
+            max-width: 40%;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        td {
+            text-align: right;
+            padding: 5px 0px;
+            vertical-align: top;
+            width: 40%;
+        }
+
+        tr td:nth-child(2) {
+            text-align: left;
+        }
+
+        @media (min-width: 800px) {
+            .panel {
+                flex-direction: row;
+            }
+
+            .nav {
+                margin: -20px;
+                margin-right: 20px;
+                width: 25%;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 10px;
+            }
+
+            .nav a {
+                display: block;
+                float: none;
+                padding: 30px 0;
+
+            }
+
+            .nav div {
+                position: sticky;
+                top: 0;
+            }
+
+            .content {
+                width: 75%;
+            }
+
+            .title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .picture {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container {
+                border-bottom: 1px solid #dee1e4;
+                margin-top: 0px;
+                padding: 20px;
+            }
+
+            #skills {
+                border-bottom: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .panel {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .title {
+                box-sizing: border-box;
+                width: 50%;
+                text-align: end;
+                padding-right: 15px;
+                margin: auto;
+            }
+
+            .picture {
+                box-sizing: border-box;
+                width: 50%;
+                text-align: start;
+                padding-left: 15px;
+                margin: auto;
+                border-left: 1px solid #dee1e4;
+            }
+
+            .container {
+                width: 50%;
+                border: none;
+                border-right: 1px solid #dee1e4;
+                margin: 0;
+                margin-top: 25px;
+                align-content: center;
+            }
+
+            #contact,
+            #skills {
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+
+        <div class="nav">
+            <div>
+                <a href="#personal">Personal information</a>
+                <a href="#contact">Contact</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Curriculum vitae</h1>
+            </div>
+
+            <div class="picture">
+                <img src="https://www.4shared.com/img/H5ZgkSPmea/s25/17ebedb6f58/CV_photo" alt="Profile picture">
+            </div>
+            <div id="personal" class="container">
+                <h2>Personal information</h2>
+
+                <table>
+                    <tr>
+                        <td><strong>First name:</strong></td>
+                        <td>Jasmin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Last name:</strong></td>
+                        <td>Delić</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gender:</strong></td>
+                        <td>Male</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="contact" class="container">
+                <h2>Contact</h2>
+
+                <table>
+                    <tr>
+                        <td><strong>Adress:</strong></td>
+                        <td>Đure Đakovića bb, Tuzla</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phone number:</strong></td>
+                        <td>+38762/355-912</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Email:</strong></td>
+                        <td>jassmindelic@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="education" class="container education">
+                <h2>Education</h2>
+
+                <table>
+                    <tr>
+                        <td><strong>Year:</strong></td>
+                        <td>2009.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acquired qualification:</strong></td>
+                        <td>Elementary education</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Institution:</strong></td>
+                        <td style="padding-bottom: 20px">OŠ "Saftvet-beg Bašagić" Gradačac </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Year:</td>
+                        <td>2013.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acquired qualification:</strong></td>
+                        <td>High school education</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Institution:</strong></td>
+                        <td style="padding-bottom: 20px">Gimnazija "Mustafa Novalić" Gradačac</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Year:</strong></td>
+                        <td>2018.-2022.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acquired qualification:</strong></td>
+                        <td>3rd year Civil Engineering student</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Institution:</strong></td>
+                        <td>Faculty of Mining, Geology and Civil Engineering</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="skills" class="container">
+                <h2>Skills</h2>
+
+                <table>
+                    <tr>
+                        <td><strong>Languages:</strong></td>
+                        <td> - Bosnian</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding-bottom: 20px"> - English</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Computer skills:</strong></td>
+                        <td> - AutoCad</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - LinPro</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - SketchUp</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - Tower</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - Microsoft Excel</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - Microsoft PowerPoint</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - Microsoft Word</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - HTML</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - CSS</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> - JavaScript</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
